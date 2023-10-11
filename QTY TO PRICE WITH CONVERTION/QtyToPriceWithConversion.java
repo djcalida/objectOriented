@@ -44,8 +44,10 @@ public class QtyToPriceWithConversion {
                 System.out.println("Subtotal Price: " + result);
             }
         }
-
-        System.out.println("Total Price: " + totalResult); // Print the total price after exiting the loop
+        
+        System.out.println("Total Price: PHP" + totalResult); // Print the total price after exiting the loop
+        double pesoToUsd = totalResult / 56;
+        System.out.println("Total Price in Dollar: $" + pesoToUsd);
     }
 
     public static double processOrder(int choice, Scanner scan) {
